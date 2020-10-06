@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Site Metas -->
+        <title>Live Dinner Restaurant - Responsive HTML5 Template</title>  
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Site Icons -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">    
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="css/e.css">    
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/custom.css">
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <!-- Start header -->
+
+        <div class="logreg" >
+
+
+
+            <div class="rowish">
+                <div class="colish">
+                    <p> "Get In Touch For Getting Update"</p>
+                </div>
+                <div class="colish">
+                    <div class="container" id="container">
+                        <div class="form-container sign-up-container">
+                            <form action="#">
+                                <h1>Create Account</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <span>or use your email for registration</span>
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <button>Sign Up</button>
+                            </form>
+                        </div>
+                        <div class="form-container sign-in-container">
+                            <form action="#">
+                                <h1>Sign in</h1>
+                                <div class="social-container">
+                                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <span>or use your account</span>
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <a href="#">Forgot your password?</a>
+                                <button>Sign In</button>
+                            </form>
+                        </div>
+
+                        <!-- the overlay -->
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <!-- ALL JS FILES -->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <!-- ALL PLUGINS -->
+            <script src="js/jquery.superslides.min.js"></script>
+            <script src="js/images-loded.min.js"></script>
+            <script src="js/isotope.min.js"></script>
+            <script src="js/baguetteBox.min.js"></script>
+            <script src="js/form-validator.min.js"></script>
+            <script src="js/contact-form-script.js"></script>
+            <script src="js/custom.js"></script>
+            <script>
+                const signUpButton = document.getElementById('signUp');
+                        const signInButton = document.getElementById('signIn');
+                        const container = document.getElementById('container');
+                        signUpButton.addEventListener('click', () = >
+                                container.classList.add("right-panel-active")
+                        );
+                        signUpButton.addEventListener('click', () = >
+                                container.classList.remove("move-back")
+                        );
+                        signInButton.addEventListener('click', () = >
+                                container.classList.remove("right-panel-active")
+                        );
+                        signInButton.addEventListener('click', () = >
+                                container.classList.add("move-back")
+                        );
+            </script>
+        </div>
+    </body>
+</html>
